@@ -28,3 +28,9 @@ jobs:
         run: mvn test
       - name: Test integration
         run: mvn verify -DskipUnitTests=true
+      - name: CD
+        if: contains(github.ref,'refs/tags/v')
+        run
+
+
+   
