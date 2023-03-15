@@ -24,3 +24,7 @@ jobs:
         run: mvn compile
       - name: Package application
         run: mvn package
+      - name: Test unitaire
+        run: mvn test
+      - name: Test integration
+        run: mvn verify -DskipUnitTests=true
